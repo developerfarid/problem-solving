@@ -1,6 +1,8 @@
 
 
-function pad(number, length) { 
+
+const cardDistribution = (array) => {
+    function pad(number, length) { 
     let str = '' + number;
     while (str.length < length) {
         str = '0' + str;
@@ -9,10 +11,9 @@ function pad(number, length) {
     return str;
 
 }
-const cardDistribution = (array) => {
-
 
     const result = []
+    
     
     if (!(Array.isArray(array)) || (array.length == 0)) {
         console.log("ghfghf");
